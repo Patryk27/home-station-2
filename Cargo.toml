@@ -1,0 +1,25 @@
+[package]
+name = "home-station-2"
+version = "0.1.0"
+license = "MIT"
+authors = ["Patryk Wychowaniec <wychowaniec.patryk@gmail.com>"]
+edition = "2018"
+
+[workspace]
+members = [
+    "src/app-config",
+    "src/app-driver",
+    "src/backend",
+    "src/backend-common",
+    "src/backend-providers",
+    "src/backend-providers/airly",
+    "src/backend-providers/chrono",
+    "src/backend-providers/dark-sky",
+    "src/backend-providers/dummy",
+    "src/backend-providers/open-weather-map",
+    "src/frontend",
+    "src/frontend-core",
+]
+
+[dependencies]
+lib_app_driver = { path = "src/app-driver" }

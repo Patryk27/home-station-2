@@ -1,0 +1,14 @@
+[package]
+name = "lib_backend"
+version = "0.1.0"
+license = "MIT"
+authors = ["Patryk Wychowaniec <wychowaniec.patryk@gmail.com>"]
+edition = "2018"
+
+[lib]
+path = "lib.rs"
+
+[dependencies]
+lib_backend_common = { path = "../backend-common" }
+log = "0.4"
+serde = { version = "1.0", features = ["derive"] }
