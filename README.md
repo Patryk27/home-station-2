@@ -15,6 +15,8 @@ Side note #2: powered by [Rust](https://github.com/rust-lang/rust) and
 
 <img src="docs/photos/front.jpg" width="250px"/>
 
+_(there's a Raspberry Pi zero hidden behind the screen)_
+
 ## Goals
 
 - **Free** - as in "free beer"
