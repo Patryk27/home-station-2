@@ -27,6 +27,7 @@ _(there's a Raspberry Pi zero hidden behind the screen)_
 
 ## Roadmap
 
+- Implement i18n
 - Implement integration with [Airly](https://airly.eu/map/pl/)
 - Implement an additional screen that pops up after touching the weather icon, which will show weather predicted for the
   day
