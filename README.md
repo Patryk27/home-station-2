@@ -2,13 +2,14 @@
 
 🌞 Time and weather for everyone! ⁽ʷʰᵒ ʰᵃˢ ᵃ ˢᵖᵃʳᵉ ʳᵃˢᵖᵇᵉʳʳʸ ᵖᶦ⁾
 
-When I found about the [HyperPixel 4](https://shop.pimoroni.com/products/hyperpixel-4) (a touchscreen for Raspberry Pi),
-I immediately thought to myself `hi, me from the past - why don't we create a nice little touch-y weather station like
-you always wanted?`; I put my shoulder to the wheel and ended up with this little toy.
+First things first: I'm a big fan of LCDs and things that can be touched, so imagine my enjoyment when I found out about about the [HyperPixel 4](https://shop.pimoroni.com/products/hyperpixel-4) - it's both a display *and* a tactile screen! I immediately thought to myself `hi, me from the past - why don't we create a nice little touch-y weather station like
+you always wanted?`. I wasted no time, put my shoulder to the wheel and ended up with this little toy.
 
-Side note: this is a direct successor to my [HomeStation 1](https://github.com/Patryk27/home-station-1).
+Side note: this is a **work in progress**; I've been using it personally for a few weeks now, but it's not production-ready yet. Keep tight!
 
-Side note #2: powered by [Rust](https://github.com/rust-lang/rust) and
+Side note #2: this is a direct successor to my [HomeStation 1](https://github.com/Patryk27/home-station-1).
+
+Side note #3: it's powered by [Rust](https://github.com/rust-lang/rust) and
 [Conrod](https://github.com/PistonDevelopers/conrod).
 
 ## Station in action
