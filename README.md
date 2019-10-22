@@ -16,7 +16,7 @@ Side note #3: it's powered by [Rust](https://github.com/rust-lang/rust) and
 
 <img src="docs/photos/front.jpg" width="250px"/>
 
-_(there's a Raspberry Pi zero hidden behind the screen)_
+_(there's a Raspberry Pi Zero hidden behind the screen)_
 
 ## Goals
 
