@@ -1,0 +1,19 @@
+[package]
+name = "lib_ui_framework"
+version = "0.1.0"
+license = "MIT"
+authors = ["Patryk Wychowaniec <wychowaniec.patryk@gmail.com>"]
+edition = "2018"
+
+[lib]
+path = "lib.rs"
+
+[dependencies]
+conrod_core = "0.67.0"
+conrod_glium = "0.67.0"
+conrod_winit = "0.67.0"
+find_folder = "0.3.0"
+glium = "0.24"
+image = "0.22.0"
+log = "0.4.7"
+winit = "0.19.1"

@@ -1,3 +1,3 @@
 fn main() {
-    lib_app_driver::main();
+    lib_driver::main();
 }

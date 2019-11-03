@@ -1,0 +1,16 @@
+[package]
+name = "lib_service_providers"
+version = "0.1.0"
+license = "MIT"
+authors = ["Patryk Wychowaniec <wychowaniec.patryk@gmail.com>"]
+edition = "2018"
+
+[lib]
+path = "lib.rs"
+
+[dependencies]
+lib_airly_service_provider = { path = "airly" }
+lib_chrono_service_provider = { path = "chrono" }
+lib_dark_sky_service_provider = { path = "dark-sky" }
+lib_dummy_service_provider = { path = "dummy" }
+lib_open_weather_map_service_provider = { path = "open-weather-map" }

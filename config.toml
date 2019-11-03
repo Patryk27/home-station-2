@@ -2,28 +2,23 @@
 debug = true
 language = 'pl'
 
+air-service = 'dummy'
+time-service = 'chrono'
+weather-service = 'dummy'
+
 [display]
 width = 800
 height = 480
 
-[providers]
-air = 'dummy'
-time = 'chrono'
-weather = 'dummy'
-
-[providers.settings.airly]
+[services.airly]
 api-key = ''
 
-[providers.settings.chrono]
-months = ['stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca', 'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia']
-weekdays = ['poniedziałek', 'wtorek', 'środa', 'czwartek', 'piątek', 'sobota', 'niedziela']
-
-[providers.settings.dark-sky]
+[services.dark-sky]
 api-key = '87094ed2a7d2414ed1cb9b2cd055e12a'
 latitude = 51.1544397
 longitude = 17.0431444
 
-[providers.settings.open-weather-map]
+[services.open-weather-map]
 api-key = '955b19bb75383e80889ec01284a0a237'
 city = 'Wrocław'
 country = 'Poland'

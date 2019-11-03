@@ -7,19 +7,19 @@ edition = "2018"
 
 [workspace]
 members = [
-    "src/app-config",
-    "src/app-driver",
-    "src/backend",
-    "src/backend-common",
-    "src/backend-providers",
-    "src/backend-providers/airly",
-    "src/backend-providers/chrono",
-    "src/backend-providers/dark-sky",
-    "src/backend-providers/dummy",
-    "src/backend-providers/open-weather-map",
-    "src/frontend",
-    "src/frontend-core",
+    "src/driver",
+    "src/i18n",
+    "src/service",
+    "src/service-common",
+    "src/service-providers",
+    "src/service-providers/airly",
+    "src/service-providers/chrono",
+    "src/service-providers/dark-sky",
+    "src/service-providers/dummy",
+    "src/service-providers/open-weather-map",
+    "src/ui",
+    "src/ui-framework",
 ]
 
 [dependencies]
-lib_app_driver = { path = "src/app-driver" }
+lib_driver = { path = "src/driver" }

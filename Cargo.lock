@@ -657,7 +657,7 @@ dependencies = [
 name = "home-station-2"
 version = "0.1.0"
 dependencies = [
- "lib_app_driver 0.1.0",
+ "lib_driver 0.1.0",
 ]
 
 [[package]]
@@ -859,105 +859,101 @@ version = "1.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
-name = "lib_app_config"
+name = "lib_airly_service_provider"
 version = "0.1.0"
 dependencies = [
- "lib_backend_providers 0.1.0",
- "serde 1.0.101 (registry+https://github.com/rust-lang/crates.io-index)",
- "toml 0.5.3 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
-name = "lib_app_driver"
-version = "0.1.0"
-dependencies = [
- "chrono 0.4.9 (registry+https://github.com/rust-lang/crates.io-index)",
- "fern 0.5.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "lib_app_config 0.1.0",
- "lib_backend 0.1.0",
- "lib_backend_common 0.1.0",
- "lib_backend_providers 0.1.0",
- "lib_frontend 0.1.0",
- "lib_frontend_core 0.1.0",
- "log 0.4.8 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
-name = "lib_backend"
-version = "0.1.0"
-dependencies = [
- "lib_backend_common 0.1.0",
- "log 0.4.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde 1.0.101 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
-name = "lib_backend_airly_provider"
-version = "0.1.0"
-dependencies = [
- "lib_backend_common 0.1.0",
+ "lib_service_common 0.1.0",
  "log 0.4.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "pwr_airly 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.101 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
-name = "lib_backend_chrono_provider"
+name = "lib_chrono_service_provider"
 version = "0.1.0"
 dependencies = [
  "chrono 0.4.9 (registry+https://github.com/rust-lang/crates.io-index)",
- "lib_backend_common 0.1.0",
+ "lib_service_common 0.1.0",
  "log 0.4.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.101 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
-name = "lib_backend_common"
-version = "0.1.0"
-
-[[package]]
-name = "lib_backend_dark_sky_provider"
+name = "lib_dark_sky_service_provider"
 version = "0.1.0"
 dependencies = [
  "forecast 2.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "lib_backend_common 0.1.0",
+ "lib_service_common 0.1.0",
  "log 0.4.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "reqwest 0.9.22 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.101 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
-name = "lib_backend_dummy_provider"
+name = "lib_driver"
 version = "0.1.0"
 dependencies = [
- "lib_backend_common 0.1.0",
+ "chrono 0.4.9 (registry+https://github.com/rust-lang/crates.io-index)",
+ "fern 0.5.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "lib_service 0.1.0",
+ "lib_service_common 0.1.0",
+ "lib_service_providers 0.1.0",
+ "lib_ui 0.1.0",
+ "lib_ui_framework 0.1.0",
+ "log 0.4.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde 1.0.101 (registry+https://github.com/rust-lang/crates.io-index)",
+ "toml 0.5.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "lib_dummy_service_provider"
+version = "0.1.0"
+dependencies = [
+ "lib_service_common 0.1.0",
  "log 0.4.8 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
-name = "lib_backend_open_weather_map_provider"
+name = "lib_i18n"
+version = "0.1.0"
+
+[[package]]
+name = "lib_open_weather_map_service_provider"
 version = "0.1.0"
 dependencies = [
  "hyper 0.10.16 (registry+https://github.com/rust-lang/crates.io-index)",
- "lib_backend_common 0.1.0",
+ "lib_service_common 0.1.0",
  "log 0.4.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "owm 0.1.0 (git+https://github.com/plorefice/owm-rs)",
  "serde 1.0.101 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
-name = "lib_backend_providers"
+name = "lib_service"
 version = "0.1.0"
 dependencies = [
- "lib_backend_airly_provider 0.1.0",
- "lib_backend_chrono_provider 0.1.0",
- "lib_backend_dark_sky_provider 0.1.0",
- "lib_backend_dummy_provider 0.1.0",
- "lib_backend_open_weather_map_provider 0.1.0",
+ "lib_service_common 0.1.0",
+ "log 0.4.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde 1.0.101 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
-name = "lib_frontend"
+name = "lib_service_common"
+version = "0.1.0"
+
+[[package]]
+name = "lib_service_providers"
+version = "0.1.0"
+dependencies = [
+ "lib_airly_service_provider 0.1.0",
+ "lib_chrono_service_provider 0.1.0",
+ "lib_dark_sky_service_provider 0.1.0",
+ "lib_dummy_service_provider 0.1.0",
+ "lib_open_weather_map_service_provider 0.1.0",
+]
+
+[[package]]
+name = "lib_ui"
 version = "0.1.0"
 dependencies = [
  "conrod_core 0.67.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -966,15 +962,15 @@ dependencies = [
  "find_folder 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "glium 0.24.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "image 0.22.3 (registry+https://github.com/rust-lang/crates.io-index)",
- "lib_backend 0.1.0",
- "lib_backend_common 0.1.0",
- "lib_frontend_core 0.1.0",
+ "lib_service 0.1.0",
+ "lib_service_common 0.1.0",
+ "lib_ui_framework 0.1.0",
  "log 0.4.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "winit 0.19.3 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
-name = "lib_frontend_core"
+name = "lib_ui_framework"
 version = "0.1.0"
 dependencies = [
  "conrod_core 0.67.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -983,8 +979,6 @@ dependencies = [
  "find_folder 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "glium 0.24.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "image 0.22.3 (registry+https://github.com/rust-lang/crates.io-index)",
- "lib_backend 0.1.0",
- "lib_backend_common 0.1.0",
  "log 0.4.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "winit 0.19.3 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
